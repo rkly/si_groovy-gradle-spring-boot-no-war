@@ -25,7 +25,7 @@ processResources { expand(project.properties) }
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.3.6'
-    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf:1.1.8.RELEASE")
 
     compile('org.springframework.boot:spring-boot-starter-web:1.1.8.RELEASE') { 
         exclude module: 'spring-boot-starter-tomcat' 
