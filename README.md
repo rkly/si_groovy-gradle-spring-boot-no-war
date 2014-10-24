@@ -5,4 +5,4 @@ Simple project to demonstrate Spring-Boot with Groovy and Gradle.
 
 The project has a component test phase. Spring Boot itself is started out of the tests.
     
-
+$ gradle build
