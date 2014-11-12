@@ -5,3 +5,5 @@ bin
 .gradle
 .project
 .settings
+.nb-gradle
+

@@ -13,12 +13,6 @@ import org.springframework.context.annotation.Configuration
 class Application {
 
     static void main(String[] args) {
-        ApplicationContext ctx = SpringApplication.run(Application.class, args);
-
-        println "Let's inspect the beans provided by Spring Boot:"
-
-        String[] beanNames = ctx.getBeanDefinitionNames();
-        Arrays.sort(beanNames);
-        beanNames.each { beanName -> println beanName }
+        SpringApplication.run(Application.class, args);
     }
 }
