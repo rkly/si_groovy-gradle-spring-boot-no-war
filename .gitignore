@@ -5,9 +5,6 @@ bin
 .gradle
 .project
 .settings
-<<<<<<< HEAD
 .vagrant
-=======
 .nb-gradle
 
->>>>>>> 8e45af737065e7fc1f1edaeeae3e9740cb0bfe77
