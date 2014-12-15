@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:14.04
 MAINTAINER docker@fhb.de
 
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
@@ -14,5 +14,4 @@ RUN update-alternatives --config java
 ADD ./target/libs/groovy-gradle-spring-boot-no-war-1.0.jar /service.jar
 
 EXPOSE 8080
-CMD ["--port 8080"]
 ENTRYPOINT java -jar /service.jar
