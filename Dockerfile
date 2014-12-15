@@ -11,7 +11,9 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 RUN apt-get install -y oracle-java8-installer
 RUN update-alternatives --config java
 
-ADD ./target/libs/groovy-gradle-spring-boot-no-war-1.0.jar /service.jar
+#ADD ./target/libs/groovy-gradle-spring-boot-no-war-1.0.jar /service.jar
+
+ADD https://s3-eu-west-1.amazonaws.com/fhb-deployment/groovy-gradle-spring-boot-no-war-1.0.jar /service.jar
 
 EXPOSE 8080
 ENTRYPOINT java -jar /service.jar
