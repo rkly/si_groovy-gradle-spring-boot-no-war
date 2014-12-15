@@ -39,3 +39,6 @@ ADD ./target/libs/groovy-gradle-spring-boot-no-war-1.0.jar /service.jar
 ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
 
 
+
+
+
