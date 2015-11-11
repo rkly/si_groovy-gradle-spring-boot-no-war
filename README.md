@@ -7,7 +7,13 @@ The project has a component test phase. Spring Boot itself is started out of the
     
 $ gradle build
 
+Start the spring-boot app with: $ java -jar target/libs/groovy-gradle-spring-boot-no-war-1.0.jar
 
+Go to: http://localhost:8080/
+
+Dockerfile:
+
+```
 FROM ubuntu:latest
 MAINTAINER docker@fhb.de
 
@@ -37,6 +43,4 @@ RUN update-alternatives --config java
 ADD ./target/libs/groovy-gradle-spring-boot-no-war-1.0.jar /service.jar
 
 ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
-
-
-
+```
