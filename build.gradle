@@ -4,19 +4,22 @@ buildscript {
     }
     dependencies {
         classpath('org.springframework.boot:spring-boot-gradle-plugin:1.2.7.RELEASE')
+        classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.4.0'
     }
 }
 
+plugins {
+    id "net.saliman.cobertura" version "2.2.8"
+}
+
 apply plugin: 'groovy'
-apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
-apply plugin: 'jacoco'
+apply plugin: 'com.github.kt3k.coveralls'
 
 configurations { providedRuntime }
 
 version = 1.0
 description = 'Little Spring Boot project to play around.'
-buildDir = 'target'
 
 repositories { mavenCentral() }
 
@@ -74,4 +77,9 @@ check {
         'componentTests',
         'allTests'
     ]
+}
+
+cobertura {
+    coverageSourceDirs = sourceSets.main.groovy.srcDirs
+    coverageFormats = ['html', 'xml']
 }
