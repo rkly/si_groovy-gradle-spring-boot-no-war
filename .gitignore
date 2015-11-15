@@ -1,5 +1,6 @@
 .idea
 groovy-gradle-spring-boot-no-war.iml
+groovy-gradle-spring-boot.iml
 target
 build
 bin

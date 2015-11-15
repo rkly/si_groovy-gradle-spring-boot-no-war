@@ -1,5 +1,6 @@
-groovy-gradle-spring-boot-no-war [![Build Status](https://travis-ci.org/lars-gentsch-fhb/groovy-gradle-spring-boot-no-war.svg?branch=master)](https://travis-ci.org/lars-gentsch-fhb/groovy-gradle-spring-boot-no-war)
+groovy-gradle-spring-boot-no-war [![Build Status](https://travis-ci.org/lars-gentsch-fhb/groovy-gradle-spring-boot-no-war.svg?branch=master)](https://travis-ci.org/lars-gentsch-fhb/groovy-gradle-spring-boot-no-war) [![Coverage Status](https://coveralls.io/repos/lars-gentsch-fhb/groovy-gradle-spring-boot-no-war/badge.svg?branch=master&service=github)](https://coveralls.io/github/lars-gentsch-fhb/groovy-gradle-spring-boot-no-war?branch=master)
 =========================
+
 
 Simple project to demonstrate Spring-Boot with Groovy and Gradle.
 
