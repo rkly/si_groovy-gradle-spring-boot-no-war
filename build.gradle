@@ -19,6 +19,7 @@ apply plugin: 'cobertura'
 apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
 
+
 configurations { providedRuntime }
 
 version = 1.0
